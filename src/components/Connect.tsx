@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Twitter, Mail } from "lucide-react";
+import { Github, Twitter, Linkedin, Mail } from "lucide-react";
 
 export default function Connect() {
   return (
@@ -42,6 +42,15 @@ export default function Connect() {
             >
               <Github size={16} />
               <span>GitHub</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/prannayreddy/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-white/[0.04] border border-white/[0.08] text-sm text-neutral-300 transition-all duration-200 hover:border-white/[0.16] hover:bg-white/[0.06] hover:text-white"
+            >
+              <Linkedin size={16} />
+              <span>LinkedIn</span>
             </a>
             <a
               href="mailto:prannaysreddy@gmail.com"

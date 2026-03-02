@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Twitter, ChevronDown } from "lucide-react";
+import { Github, Twitter, Linkedin, ChevronDown } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -80,6 +80,15 @@ export default function Hero() {
           >
             <Twitter size={16} />
             <span>X / Twitter</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/prannayreddy/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center gap-2 px-5 py-2.5 rounded-lg border border-white/[0.08] bg-white/[0.02] text-sm text-neutral-300 transition-all duration-200 hover:border-white/[0.16] hover:bg-white/[0.04] hover:text-white"
+          >
+            <Linkedin size={16} />
+            <span>LinkedIn</span>
           </a>
         </motion.div>
       </div>

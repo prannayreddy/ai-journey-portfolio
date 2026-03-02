@@ -1,6 +1,6 @@
 "use client";
 
-import { Github, Twitter } from "lucide-react";
+import { Github, Twitter, Linkedin } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -26,6 +26,14 @@ export default function Footer() {
             className="text-neutral-500 transition-colors duration-200 hover:text-white"
           >
             <Twitter size={18} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/prannayreddy/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-neutral-500 transition-colors duration-200 hover:text-white"
+          >
+            <Linkedin size={18} />
           </a>
         </div>
       </div>
