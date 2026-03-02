@@ -6,9 +6,10 @@
     "stack": ["Next.js", "Perplexity Computer", "Claude 3.5 Sonnet", "Vercel"],
     "story": "Orchestrated a fully autonomous agentic workflow to build, deploy, and self-update an emergency resource hub for Indian expats during the 2026 Gulf Crisis in under an hour.",
     "highlights": [
+      "408 visitors and 522 page views on launch day",
+      "139 organic referrals from Reddit within hours",
       "Autonomous hourly monitoring with two-tier auto-deploy",
-      "Real-time crisis data for 9 embassies, 12+ airlines, 7 airports",
-      "42 visitors within 15 minutes of launch at 6 AM"
+      "Real-time crisis data for 9 embassies, 12+ airlines, 7 airports"
     ],
     "links": {
       "github": "https://github.com/prannayreddy/gulf-india-crisis-hub",
