@@ -17,11 +17,11 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Prannay Reddy — AI Developer Portfolio",
   description:
-    "Building at the speed of thought. Software engineer exploring the frontier of AI-assisted development.",
+    "Exploring the frontier of AI-assisted development. Shipping real products with autonomous agents.",
   openGraph: {
     title: "Prannay Reddy — AI Developer Portfolio",
     description:
-      "Building at the speed of thought. Software engineer exploring the frontier of AI-assisted development.",
+      "Exploring the frontier of AI-assisted development. Shipping real products with autonomous agents.",
     type: "website",
   },
 };

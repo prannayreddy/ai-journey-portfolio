@@ -47,10 +47,8 @@ export default function About() {
             <p>
               I&apos;m{" "}
               <span className="text-white font-medium">Prannay Reddy</span>, a
-              software engineer at{" "}
-              <span className="text-white font-medium">Expedia</span> who
-              discovered that the most interesting code is the code you don&apos;t
-              write yourself.
+              software engineer who discovered that the most interesting code
+              is the code you don&apos;t write yourself.
             </p>
             <p>
               My current obsession: orchestrating AI agents to build production

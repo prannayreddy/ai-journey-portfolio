@@ -6,15 +6,12 @@ import {
   ExternalLink,
   Zap,
   Code2,
-  Layers,
   Star,
 } from "lucide-react";
 import projects from "@/data/projects.json";
 
 const iconMap: Record<string, React.ReactNode> = {
   "gulf-crisis-hub": <Zap size={20} />,
-  "ai-code-review": <Code2 size={20} />,
-  "travel-content-engine": <Layers size={20} />,
 };
 
 export default function Journey() {
@@ -50,7 +47,13 @@ export default function Journey() {
                 delay: index * 0.1,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className={`${project.featured ? "md:col-span-2 lg:col-span-2" : ""}`}
+              className={`${
+                project.featured && projects.length === 1
+                  ? "md:col-span-2 lg:col-span-3"
+                  : project.featured
+                    ? "md:col-span-2 lg:col-span-2"
+                    : ""
+              }`}
             >
               <motion.div
                 whileHover={{ scale: 1.02 }}

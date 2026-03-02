@@ -20,7 +20,7 @@ export default function Footer() {
             <Github size={18} />
           </a>
           <a
-            href="https://x.com/"
+            href="https://x.com/prannayreddy"
             target="_blank"
             rel="noopener noreferrer"
             className="text-neutral-500 transition-colors duration-200 hover:text-white"

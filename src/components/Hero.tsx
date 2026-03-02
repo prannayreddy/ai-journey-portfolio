@@ -52,8 +52,8 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
           className="text-lg sm:text-xl text-neutral-400 max-w-xl mx-auto mb-10 leading-relaxed"
         >
-          Software engineer at Expedia. Exploring the frontier of AI&#8209;assisted
-          development &mdash; shipping real products with autonomous agents.
+          Exploring the frontier of AI&#8209;assisted development &mdash;
+          shipping real products with autonomous agents.
         </motion.p>
 
         {/* Social links */}
@@ -73,7 +73,7 @@ export default function Hero() {
             <span>GitHub</span>
           </a>
           <a
-            href="https://x.com/"
+            href="https://x.com/prannayreddy"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center gap-2 px-5 py-2.5 rounded-lg border border-white/[0.08] bg-white/[0.02] text-sm text-neutral-300 transition-all duration-200 hover:border-white/[0.16] hover:bg-white/[0.04] hover:text-white"

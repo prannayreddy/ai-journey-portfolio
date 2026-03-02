@@ -16,41 +16,5 @@
     },
     "featured": true,
     "date": "2026-03"
-  },
-  {
-    "id": "ai-code-review",
-    "title": "AI-Powered Code Review Agent",
-    "role": "ML Engineer & Backend Developer",
-    "stack": ["Python", "LangChain", "GPT-4", "GitHub Actions"],
-    "story": "Built an intelligent code review agent that analyzes pull requests for security vulnerabilities, performance issues, and style violations — integrated directly into the CI/CD pipeline.",
-    "highlights": [
-      "Reduced code review turnaround by 60%",
-      "Custom fine-tuned model for team-specific patterns",
-      "Seamless GitHub Actions integration"
-    ],
-    "links": {
-      "github": "#",
-      "live": "#"
-    },
-    "featured": false,
-    "date": "2026-02"
-  },
-  {
-    "id": "travel-content-engine",
-    "title": "AI Travel Content Engine",
-    "role": "Full Stack Developer & Content Creator",
-    "stack": ["Next.js", "OpenAI API", "Vercel AI SDK", "Tailwind CSS"],
-    "story": "A content generation platform that transforms raw travel footage metadata into polished social media posts, captions, and hashtag strategies — optimized for engagement.",
-    "highlights": [
-      "Multi-platform content generation (Reels, Shorts, TikTok)",
-      "SEO-optimized descriptions and hashtag clustering",
-      "Batch processing for content calendar workflows"
-    ],
-    "links": {
-      "github": "#",
-      "live": "#"
-    },
-    "featured": false,
-    "date": "2026-01"
   }
 ]
