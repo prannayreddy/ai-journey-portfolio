@@ -1,24 +1,28 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { PenLine, ArrowUpRight } from "lucide-react";
+import { PenLine, ArrowUpRight, Clock } from "lucide-react";
 
 const posts = [
   {
     title: "How I Built a Crisis Hub in Under an Hour with AI",
     description:
-      "The full story of orchestrating autonomous agents to ship a production resource hub during the 2026 Gulf Crisis.",
+      "The full story of orchestrating autonomous agents to ship a production resource hub for Indian expats during the 2026 Gulf Crisis.",
     tag: "Case Study",
-    status: "coming-soon" as const,
-    link: "#",
+    status: "published" as const,
+    link: "/writing/crisis-hub",
+    readTime: "12 min",
+    date: "March 2026",
   },
   {
     title: "The Agentic Developer Workflow",
     description:
-      "Lessons learned from building real products entirely through AI conversation — no IDE, no terminal.",
+      "Lessons learned from building real products entirely through AI conversation — no IDE, no terminal. What works, what breaks, and what to avoid.",
     tag: "Essay",
-    status: "coming-soon" as const,
-    link: "#",
+    status: "published" as const,
+    link: "/writing/agentic-workflow",
+    readTime: "10 min",
+    date: "March 2026",
   },
 ];
 
@@ -56,18 +60,20 @@ export default function Writing() {
                 ease: [0.16, 1, 0.3, 1],
               }}
             >
-              <div className="group relative rounded-xl border border-white/[0.06] bg-white/[0.02] p-5 sm:p-6 transition-all duration-300 hover:border-white/[0.12] hover:bg-white/[0.03]">
+              <a
+                href={post.link}
+                className="group block relative rounded-xl border border-white/[0.06] bg-white/[0.02] p-5 sm:p-6 transition-all duration-300 hover:border-white/[0.12] hover:bg-white/[0.03]"
+              >
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex-1">
                     <div className="flex items-center gap-2.5 mb-2">
                       <span className="text-xs font-[family-name:var(--font-mono)] text-cyan-400/60 px-2 py-0.5 rounded-md bg-cyan-400/[0.06] border border-cyan-400/10">
                         {post.tag}
                       </span>
-                      {post.status === "coming-soon" && (
-                        <span className="text-xs text-neutral-500 font-[family-name:var(--font-mono)]">
-                          Coming soon
-                        </span>
-                      )}
+                      <span className="flex items-center gap-1 text-xs text-neutral-500 font-[family-name:var(--font-mono)]">
+                        <Clock size={11} />
+                        {post.readTime}
+                      </span>
                     </div>
                     <h3 className="text-lg font-semibold text-white mb-1.5 group-hover:text-cyan-300 transition-colors duration-200">
                       {post.title}
@@ -76,24 +82,12 @@ export default function Writing() {
                       {post.description}
                     </p>
                   </div>
-                  {post.status !== "coming-soon" && (
-                    <a
-                      href={post.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-1 text-neutral-500 hover:text-cyan-400 transition-colors duration-200"
-                    >
-                      <ArrowUpRight size={18} />
-                    </a>
-                  )}
-                  {post.status === "coming-soon" && (
-                    <PenLine
-                      size={18}
-                      className="mt-1 text-neutral-600 shrink-0"
-                    />
-                  )}
+                  <ArrowUpRight
+                    size={18}
+                    className="mt-1 text-neutral-600 group-hover:text-cyan-400 transition-colors duration-200 shrink-0"
+                  />
                 </div>
-              </div>
+              </a>
             </motion.div>
           ))}
         </div>

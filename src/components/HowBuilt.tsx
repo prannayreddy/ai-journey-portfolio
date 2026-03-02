@@ -8,7 +8,7 @@ const steps = [
     icon: <Bot size={18} />,
     label: "Prompt",
     description: "Described the portfolio vision to an AI agent",
-    time: "0 min",
+    time: "2 min",
   },
   {
     icon: <GitBranch size={18} />,
